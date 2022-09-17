@@ -1,0 +1,17 @@
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.accent-logo {
+  color: var(--accent-color);
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}

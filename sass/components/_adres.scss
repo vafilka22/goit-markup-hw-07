@@ -1,0 +1,54 @@
+.adres {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  color: #757575;
+  letter-spacing: 0.02em;
+}
+
+.link-contact {
+  fill: currentColor;
+  color: #757575;
+  position: relative;
+}
+.link-contact::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  transform: scaleX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-contact:hover:after {
+  transform: scaleX(1);
+}
+
+.link-contact:hover,
+.link-contact:focus {
+  color: #2196f3;
+}
+.adres-link {
+  display: flex;
+  align-items: center;
+  width: 161px;
+  height: 16px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.contacts {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+}

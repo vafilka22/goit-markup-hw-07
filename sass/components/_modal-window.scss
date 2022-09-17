@@ -1,0 +1,32 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+
+  padding-left: 41px;
+  padding-top: 40px;
+  padding-right: 39px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.close {
+  position: absolute;
+
+  right: 0px;
+  top: 0px;
+  margin: 8px 8px;
+  padding-left: 6px;
+  padding-top: 6px;
+  padding-right: 6px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  list-style: none;
+  cursor: pointer;
+}
