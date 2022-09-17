@@ -130,8 +130,7 @@ body {
   color: #757575;
   position: relative;
 }
-
-.link-contact::after {
+.link-contact:after {
   content: "";
   position: absolute;
   left: 0;
@@ -139,13 +138,10 @@ body {
   transform: scaleX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .link-contact:hover:after {
   transform: scaleX(1);
 }
-
-.link-contact:hover,
-.link-contact:focus {
+.link-contact:hover, .link-contact:focus {
   color: #2196f3;
 }
 
@@ -275,15 +271,14 @@ body {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-input:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
 
 .modal-form-input-wrapper {
   position: relative;
   display: block;
-}
-
-.modal-form-input:focus {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
 }
 
 .modal-form-input-icon {
@@ -310,6 +305,11 @@ body {
   resize: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-message:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
 
 .modal-form-message::placeholder {
   font-family: "Roboto";
@@ -319,12 +319,6 @@ body {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-form-message:focus {
-  outline: none;
-  border: 1px solid #2196f3;
-  border-radius: 4px;
 }
 
 .modal-form-check {
@@ -384,7 +378,6 @@ body {
   text-decoration-line: underline;
   color: #2196f3;
 }
-
 .form-text:hover {
   text-decoration-line: none;
 }
@@ -409,9 +402,7 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-.modal-form-sumbit:hover,
-.modal-form-sumbit:focus {
+.modal-form-sumbit:hover, .modal-form-sumbit:focus {
   background-color: #188ce8;
   color: #ffffff;
 }
@@ -470,9 +461,7 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: #188ce8;
   color: #ffffff;
 }
@@ -550,8 +539,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-
-.works-thumb:hover::before {
+.works-thumb:hover:before {
   opacity: 1;
 }
 
@@ -655,16 +643,14 @@ body {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.caption-soc-link:hover, .caption-soc-link:focus {
+  background: #2196f3;
+}
 
 .caption-soc-icon {
   position: absolute;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.caption-soc-link:hover,
-.caption-soc-link:focus {
-  background: #2196f3;
 }
 
 .caption-soc-link:hover .caption-soc-icon,
@@ -842,9 +828,7 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-form-sumbit:hover,
-.footer-form-sumbit:focus {
+.footer-form-sumbit:hover, .footer-form-sumbit:focus {
   background-color: #188ce8;
   color: #ffffff;
 }
@@ -866,7 +850,6 @@ body {
 }
 
 .address {
-  /* position: absolute; */
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
@@ -937,9 +920,7 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-tap:hover,
-.button-tap:focus {
+.button-tap:hover, .button-tap:focus {
   background: #2196f3;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -992,25 +973,20 @@ body {
   line-height: 2;
 }
 
-.shadow:hover,
-.shadow:focus {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.shadow {
-  display: block;
-  margin: auto;
-}
-
 .shadow {
   position: relative;
   width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+  margin: auto;
   overflow: hidden;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.shadow:hover, .shadow:focus {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .shadow:hover .overlay,

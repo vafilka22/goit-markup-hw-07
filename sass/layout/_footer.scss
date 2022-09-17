@@ -115,12 +115,12 @@
   color: #ffffff;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-form-sumbit:hover,
-.footer-form-sumbit:focus {
-  background-color: #188ce8;
-  color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: #ffffff;
+  }
 }
 
 .footer-form-icon {
@@ -139,8 +139,6 @@
 }
 
 .address {
-  /* position: absolute; */
-
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;

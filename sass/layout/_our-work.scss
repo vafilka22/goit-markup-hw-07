@@ -28,10 +28,10 @@
 .works-thumb {
   position: relative;
   overflow: hidden;
-}
 
-.works-thumb:hover::before {
-  opacity: 1;
+  &:hover:before {
+    opacity: 1;
+  }
 }
 
 .works-text {

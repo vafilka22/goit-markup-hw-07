@@ -10,25 +10,24 @@
   fill: currentColor;
   color: #757575;
   position: relative;
-}
-.link-contact::after {
-  content: "";
 
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  &:after {
+    content: "";
 
-  transform: scaleX(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
-.link-contact:hover:after {
-  transform: scaleX(1);
-}
-
-.link-contact:hover,
-.link-contact:focus {
-  color: #2196f3;
+    transform: scaleX(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover:after {
+    transform: scaleX(1);
+  }
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
 }
 .adres-link {
   display: flex;
