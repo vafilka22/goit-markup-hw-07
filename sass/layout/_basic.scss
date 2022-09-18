@@ -5,13 +5,13 @@
   margin-top: calc "-1 * var(--card-set-gap)";
 }
 
-.basic-list > .basic-item {
+.basic-list > .basic__item {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
 
-.basic-item {
+.basic__item {
   max-width: 270px;
   border-radius: 4px;
 }

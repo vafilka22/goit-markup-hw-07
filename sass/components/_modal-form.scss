@@ -119,11 +119,11 @@
   display: none;
   fill: #ffffff;
   margin-left: 54px;
-}
-
-.modal-form-check:checked + .modal-form-own-checbox {
-  background-color: #188ce8;
-  border: #188ce8;
+  
+    .modal-form-check:checked + & {
+      background-color: #188ce8;
+      border: #188ce8;
+    } 
 }
 
 .modal-form-check:checked
@@ -134,6 +134,9 @@
 .modal-form-check:focus + .modal-form-own-checbox {
   box-shadow: 0 0 0 2px rgba(0, 0, 235, 0.5);
 }
+
+
+
 .modal-form-check-field {
   display: flex;
   align-items: center;

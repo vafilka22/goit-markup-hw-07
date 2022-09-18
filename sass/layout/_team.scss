@@ -88,9 +88,9 @@
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.caption-soc-link:hover .caption-soc-icon,
-.caption-soc-link:focus .caption-soc-icon {
-  fill: #ffffff;
+  .caption-soc-link:hover &,
+  .caption-soc-link:focus & {
+    fill: #ffffff;
+  }
 }

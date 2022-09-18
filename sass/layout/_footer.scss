@@ -42,20 +42,21 @@
   border-radius: 50%;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: #2196f3;
+  }
 }
 
 .footer-soc-icon {
   position: absolute;
   fill: #ffffff;
-}
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background: #2196f3;
-}
-.footer-soc-link:hover .footer-soc-icon,
-.footer-soc-link:focus .footer-soc-icon {
-  fill: #ffffff;
+  .footer-soc-link:hover &,
+  .footer-soc-link:focus & {
+    fill: #ffffff;
+  }
 }
 
 .footer-form {
