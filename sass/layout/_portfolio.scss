@@ -23,7 +23,7 @@
   font-size: 16px;
   line-height: 1.6;
 
-  font-family: Roboto, sans-serif;
+  font-family: $fontPrimary;
   padding: 6px 22px;
 
   color: var(--title-text-color);
@@ -128,7 +128,7 @@
   padding-left: 24px;
   padding-right: 24px;
   align-items: center;
-  font-family: "Roboto";
+  font-family: $fontPrimary;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

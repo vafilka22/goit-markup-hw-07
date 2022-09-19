@@ -5,7 +5,7 @@
 }
 .logo-footer {
   display: block;
-  font-family: Raleway;
+  font-family: $fontLogo;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.8;
@@ -68,7 +68,7 @@
 }
 .footer-form-title {
   margin-bottom: 20px;
-  font-family: "Roboto";
+  font-family: $fontPrimary;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -106,7 +106,7 @@
   color: var(--primary-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: "Roboto";
+  font-family: $fontPrimary;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -168,7 +168,7 @@
 
 .join-title {
   margin-bottom: 20px;
-  font-family: "Roboto";
+  font-family: $fontPrimary;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
